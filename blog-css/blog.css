@@ -54,3 +54,52 @@
     padding: 0 10px;
     text-decoration: none;
 }
+
+/* blog-container CSS */
+
+.blog-container {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        'one two'
+        'three four'
+        'five six';
+    grid-gap: 5px;
+    border: 3px solid purple;
+    justify-content: center;
+}
+
+
+
+.blog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid grey;
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+#six {
+    grid-area: six;
+}

@@ -10,17 +10,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100px 10fr 80px;
-    border: 5px solid red;
+    /* border: 5px solid red; */
     grid-template-areas:
         'nav nav nav nav nav nav'
         'body body body body body body'
         'ft ft ft ft ft ft';
     padding: 10px;
     overflow: hidden;
-}
-
-.container-content {
-    border: 2px solid green;
 }
 
 
@@ -58,6 +54,10 @@
     text-decoration: none;
 }
 
+button {
+    padding: 0 20px;
+}
+
 /* blog-container CSS */
 
 .blog-container {
@@ -69,7 +69,7 @@
         'three four'
         'five six';
     grid-gap: 5px;
-    border: 3px solid purple;
+    /* border: 3px solid purple; */
     justify-content: center;
     height: 100%;
     overflow: hidden;
@@ -114,7 +114,7 @@
 /* img CSS */
 
 .img {
-    border: 2px solid violet;
+    /* border: 2px solid violet; */
     padding: 100px 300px;
 }
 
@@ -152,4 +152,8 @@
     background-image: url('https://images.unsplash.com/photo-1520607725487-81e65ed08c8b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80');
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+p {
+    text-align: center;
 }

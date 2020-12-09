@@ -30,7 +30,10 @@
 
 #footer {
     grid-area: ft;
+    padding-top: 30px;
+    text-align: center;
 }
+
 
 /* navbar CSS */
 .nav-bar {
@@ -156,4 +159,29 @@ button {
 
 p {
     text-align: center;
+}
+
+/* media query */
+@media(max-width:600px) {
+    .blog-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+            'one'
+            'two'
+            'three'
+            'four'
+            'five'
+            'six';
+        grid-gap: 5px;
+        /* border: 3px solid purple; */
+        justify-content: center;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .container {
+        height: 350vh;
+    }
 }

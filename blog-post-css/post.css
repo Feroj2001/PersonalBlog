@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital,wght@0,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    font-size: 16px;
+    font-family: 'Andika New Basic', sans-serif;
+    font-weight: 400;
+    padding: 0 20px;
+}
+
+/* styling back to blog  */
+.btb {
+    padding: 10px;
+
+}
+
+/* blog title */
+
+.blog-title {
+    padding: 20px;
+    font-weight: 700 bold;
+}
+
+/* styling author profile */
+.author-profile {
+    display: flex;
+}
+
+#author-pic {
+    display: flex;
+    border-radius: 50%;
+    width: 100px;
+    height: 80px;
+    padding: 0 10px;
+}

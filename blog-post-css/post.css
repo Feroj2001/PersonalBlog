@@ -7,34 +7,16 @@
 }
 
 .container {
-    font-size: 16px;
-    font-family: 'Andika New Basic', sans-serif;
-    font-weight: 400;
-    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 4fr 80px;
 }
 
-/* styling back to blog  */
-.btb {
-    padding: 10px;
+/* back to blog styling */
 
-}
 
 /* blog title */
 
-.blog-title {
-    padding: 20px;
-    font-weight: 700 bold;
-}
+
 
 /* styling author profile */
-.author-profile {
-    display: flex;
-}
-
-#author-pic {
-    display: flex;
-    border-radius: 50%;
-    width: 100px;
-    height: 80px;
-    padding: 0 10px;
-}

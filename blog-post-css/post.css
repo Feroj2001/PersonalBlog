@@ -6,3 +6,41 @@
     box-sizing: border-box;
     background-color: snow;
 }
+
+/* styling container */
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 200px 1fr 150px;
+    grid-template-areas:
+        'btb btb btb btb btb btb'
+        'athr athr athr athr athr athr'
+        'ct ct ct ct ct ct'
+        'ft ft ft ft ft ft ';
+}
+
+.blog-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#goback {
+    grid-area: btb;
+}
+
+#authoinfo {
+    grid-area: athr;
+}
+
+#content {
+    grid-area: ct;
+}
+
+
+#footer {
+    grid-area: ft;
+}

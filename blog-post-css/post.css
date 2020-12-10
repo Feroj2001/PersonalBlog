@@ -13,7 +13,7 @@
     height: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 200px 1fr 150px;
+    grid-template-rows: 50px 320px 1fr 80px;
     grid-template-areas:
         'btb btb btb btb btb btb'
         'athr athr athr athr athr athr'
@@ -34,6 +34,7 @@
 
 #authoinfo {
     grid-area: athr;
+    border-bottom: 2px solid grey;
 }
 
 #content {
@@ -43,4 +44,112 @@
 
 #footer {
     grid-area: ft;
+    text-align: center;
+    color: rgb(168, 73, 73);
+    font-size: 1.2em;
+}
+
+.blog {
+    padding: 20px;
+}
+
+/* back to blog styles */
+.back-to-blog:hover {
+    font-size: 1.2em;
+}
+
+/* author information */
+
+
+#author-pic {
+    width: 15%;
+    height: 10%;
+    border-radius: 50%;
+}
+
+p>a {
+    padding: 0 5px;
+}
+
+/* content */
+p,
+h1,
+h3,
+ul {
+    width: 50%;
+    padding: 10px;
+}
+
+h1,
+h3 {
+    text-align: center;
+    font-size: 2em;
+    color: #040C38;
+}
+
+p {
+    color: #3F4C92;
+}
+
+.blog-content {
+    justify-content: center;
+    font-size: 1.2em;
+}
+
+#web-dev {
+    width: 500px;
+    height: 300px;
+}
+
+
+@media(max-width:600px) {
+    .container {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 300px 1fr 80px;
+        grid-template-areas:
+            'btb'
+            'athr'
+            'ct'
+            'ft';
+    }
+
+    p,
+    h1,
+    h3,
+    ul {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #footer {
+        margin-top: 30px;
+    }
+}
+
+@media(max-width:900px) {
+    .container {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 300px 1fr 80px;
+        grid-template-areas:
+            'btb'
+            'athr'
+            'ct'
+            'ft';
+    }
+
+    p,
+    h1,
+    h3,
+    ul {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #footer {
+        margin-top: 30px;
+    }
 }
